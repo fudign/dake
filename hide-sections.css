@@ -1,0 +1,20 @@
+/* Скрываем "Наши дети" */
+.InvitationMessage-module__rYRP7G__lead {
+  display: none !important;
+}
+
+/* Скрываем повторение имен "Данияр & Азиза" после "Уважаемые гости!" */
+.InvitationMessage-module__rYRP7G__names {
+  display: none !important;
+}
+
+/* Скрываем блок "Хозяева торжества" */
+.InvitationMessage-module__rYRP7G__hosts {
+  display: none !important;
+}
+
+
+/* Скрываем футер с кредитами дизайнера */
+.Footer-module__dpPCzG__credit {
+  display: none !important;
+}
