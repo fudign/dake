@@ -39,7 +39,7 @@ git add -A
 git commit -m "Deploy: Convert paths for Netlify hosting"
 
 echo "5. Pushing to GitHub..."
-GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_fudign -o IdentitiesOnly=yes' git push origin main
+GIT_SSH_COMMAND='ssh -i ~/.ssh/github_fudign -o IdentitiesOnly=yes' git push origin main
 
 echo ""
 echo "=== DEPLOYMENT COMPLETE ==="
