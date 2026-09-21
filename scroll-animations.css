@@ -1,0 +1,98 @@
+/* CSS Scroll-Driven Animations (Chrome 115+, Safari 17+) */
+
+/* Анимация появления снизу */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимация fade */
+@keyframes reveal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Анимация слева */
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-1.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Анимация справа */
+@keyframes reveal-right {
+  from {
+    opacity: 0;
+    transform: translateX(1.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Анимация bloom (для цветов) */
+@keyframes reveal-bloom {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Применяем анимации к элементам с data-reveal */
+[data-reveal="up"] {
+  animation: reveal-up linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+[data-reveal="fade"] {
+  animation: reveal-fade linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+[data-reveal="left"] {
+  animation: reveal-left linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+[data-reveal="right"] {
+  animation: reveal-right linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+[data-reveal="bloom"] {
+  animation: reveal-bloom linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+/* Для старых браузеров - показываем элементы сразу */
+@supports not (animation-timeline: view()) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
