@@ -14,6 +14,8 @@ sed -i '
   s|href="/icon|href="icon|g
   s|href="/apple-icon|href="apple-icon|g
   s|href="/images/|href="images/|g
+  s|imageSrcSet="/images/|imageSrcSet="images/|g
+  s|imageSrcSet="/flowers/|imageSrcSet="flowers/|g
 }
 /<script[^>]*src=/ {
   s|src="/_next/|src="_next/|g
