@@ -1,0 +1,6 @@
+*.backup
+*.safe-backup
+*.working-backup
+download-all.js
+resource-map.json
+.git
