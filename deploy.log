@@ -1,0 +1,72 @@
+[96m[1m​[22m[39m
+[96m[1mNetlify Build                                                 [22m[39m
+[96m[1m────────────────────────────────────────────────────────────────[22m[39m
+[36m[1m​[22m[39m
+[36m[1m❯ Version[22m[39m
+  @netlify/build 37.0.0
+[36m[1m​[22m[39m
+[36m[1m❯ Flags[22m[39m
+  accountId: 6ab0ff213d17fbbfae985c70
+  deployId: 6ab11192f659c24d6055a618
+[36m[1m​[22m[39m
+[36m[1m❯ Current directory[22m[39m
+  C:\Users\user\Desktop\Новая папка\method4-custom
+[36m[1m​[22m[39m
+[36m[1m❯ Config file[22m[39m
+  No config file was defined: using default values.
+[36m[1m​[22m[39m
+[36m[1m❯ Context[22m[39m
+  production
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39mC:\Users\user\Desktop\Новая папка\method4-custom
+
+[33m⠋[39m Uploading blobs to deploy store...
+
+[32m✔[39m Finished uploading blobs to deploy store
+[33m⠋[39m Hashing files...
+[33m⠋[39m Looking for a functions cache...
+[32m✔[39m No cached functions were found
+[32m✔[39m Finished hashing 
+[33m⠋[39m CDN diffing files...
+[32m✔[39m CDN requesting 2 files and 0 edge functions
+[33m⠋[39m Uploading 2 files
+ »   Warning: JSONHTTPError: no records matched 422
+ »   Warning: 
+{
+  "name": "JSONHTTPError",
+  "status": 422,
+  "json": {
+    "code": 422,
+    "message": "no records matched"
+  }
+}
+
+[91m[1m​[22m[39m
+[91m[1mInternal error during "options.onPostBuild"                   [22m[39m
+[91m[1m────────────────────────────────────────────────────────────────[22m[39m
+​
+  [31m[1mError message[22m[39m
+  JSONHTTPError: Unprocessable Entity
+​
+  [31m[1mError location[22m[39m
+  During options.onPostBuild
+      at parseResponse (file:///C:/Users/user/AppData/Roaming/npm/node_modules/netlify-cli/node_modules/@netlify/api/lib/methods/response.js:34:39)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async callMethod (file:///C:/Users/user/AppData/Roaming/npm/node_modules/netlify-cli/node_modules/@netlify/api/lib/methods/index.js:26:28)
+      at async tryUpload (file:///C:/Users/user/AppData/Roaming/npm/node_modules/netlify-cli/dist/utils/deploy/upload-files.js:91:29)
+​
+  [31m[1mError properties[22m[39m
+  {
+    name: [32m'JSONHTTPError'[39m,
+    status: [33m422[39m,
+    json: { code: [33m422[39m, message: [32m'no records matched'[39m }
+  }
+​
+  [31m[1mResolved config[22m[39m
+  build:
+    publish: C:\Users\user\Desktop\Новая папка\method4-custom
+    publishOrigin: ui
+ »   Error: Error while running build
